@@ -2,27 +2,18 @@
 
 Disaster-Response-Pipeline
 Project Overview
-The purpose of this project is to analyze disaster data set from Figure Eight to build a model for an API that classifies disaster messages. There is an web app included where an emergency worker can input a new message and get classification results in several categories.
+The purpose of this project is to analyze Dallas Crime Data. The main analysis is will be where, what time, what type of location, and what time of year does most of the crime occure in Dallas. The findings of my analysis was then reported on a website hosted by Heroku. 
 
 Project Components
-Distaster Response project contains three parts:
+Dallas Crime Analyis contains three parts:
 
-ETL Pipeline - Where is data is explored, wrangled, and cleansed
-Machine Learning Pipeline - This is where data is run through machine learning algorithms that predict
-Flask App
-1. ETL Pipeline
-ETL Pipeline Preparation.ipynb jupyter notebook shows the code and development of ETL pipeline. Process_data.py Python script loads the messages & categories datasets, and merges the clean data then store the data into a SQLite database.
+1. Gather / Analysize Data - Did this within Jupyter Notebook File. Data Engineering is done in the notebook file. 
+2. Flask /  App Creation - This is where the data in the previous parts is organized into the framework of the website that we want to build with Flask. The HTML coding was also done in this step.  
+3. Heroku / GIT / Deploy - In this step an Heroku account was created. Heroku is hosts the app on its servers. The final parts of the app was pushed into GitHub. Heroku deploys the app directly from GitHub.
 
-2. Machine Line Pipeline
-ML Pipeline Preparation.ipynb Jupyther notebook shows the code and develoment of Machine Learning Pipeline. Train_classifier.py script loads the data from a SQLite database. And it uses the data to train and tune a Machine Learning model using GridSearchCV. Finally the model will output as a .pkl file.
+Data Engineering Process:
+The data was downloaded from dallasopendata.com. I then explored the data. I then reduced the dataframe to only to columns we cared about. After the data is consolidated I did some data engineering to the columns to create a column that consolidates the type crime that had occured, where the crime had occured, time etc. Extra columns were added to rank the crime that happened. This synthesized dataframe was used for the advanced analytics and machine learning which helped gain deeper insights. I finally visualized where the crime is happened on maps. A heat map and interactive maps was to used to bring the analysis to life.
 
-3. Flask App
-The web app can receive an input of new message and returns classification results in several categories.
 
 Instructions
-Run the following commands in the project's root directory to set up your database and model.
-To run ETL pipeline that cleans data and stores in database python data/process_data.py data/disaster_messages.csv data/disaster_categories.csv data/DisasterResponse.db
-To run ML pipeline that trains classifier and saves python models/train_classifier.py data/DisasterResponse.db models/classifier.pkl
-Run the following command in the app's directory to run your web app. 'python run.py`
-
-Go to http://0.0.0.0:3001/ I had to type in " http://localhost:3001"
+The Dallas Crime Anaysis website can be found here: https://dallascrimeflask.herokuapp.com/
