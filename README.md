@@ -14,6 +14,12 @@ Dallas Crime Analyis contains three parts:
 Data Engineering Process:
 The data was downloaded from dallasopendata.com. I then explored the data. I then reduced the dataframe to only to columns we cared about. After the data is consolidated I did some data engineering to the columns to create a column that consolidates the type crime that had occured, where the crime had occured, time etc. Extra columns were added to rank the crime that happened. This synthesized dataframe was used for the advanced analytics and machine learning which helped gain deeper insights. I finally visualized where the crime is happened on maps. A heat map and interactive maps was to used to bring the analysis to life.
 
+The initial was too big to upload to this repository but can be downloaded here:
+
+https://www.dallasopendata.com/Public-Safety/Police-Incident-location-and-pertinent-information/v3r6-776m
+
+You will need to export as a CSV. 
+
 
 Instructions
 The Dallas Crime Anaysis website can be found here: https://dallascrimeflask.herokuapp.com/
