@@ -21,5 +21,5 @@ https://www.dallasopendata.com/Public-Safety/Police-Incident-location-and-pertin
 You will need to export it as a CSV. 
 
 
-Instructions
+Instructions:
 The Dallas Crime Anaysis website can be found here: https://dallascrimeflask.herokuapp.com/
