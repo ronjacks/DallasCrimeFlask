@@ -1,6 +1,5 @@
 # DallasCrimeFlask
 
-Disaster-Response-Pipeline
 Project Overview
 The purpose of this project is to analyze Dallas Crime Data. The main analysis will be where, what time, what type of location, and what time of year does majority of the crime occur in Dallas. The findings of my analysis was then reported on a website hosted by Heroku.
 
