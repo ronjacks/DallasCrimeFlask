@@ -63,7 +63,7 @@ The app.py is the file that configures the website/ app. This file is created to
 The requirements.txt file is just a list of pip install arguments placed in a file. Note that you should not rely on the items in the file being installed by pip in any particular order.
 
 # Deployment
- Follow these instructions to deploy my analysis to website: 
+ I followed these instructions to deploy my analysis to website: 
  https://devcenter.heroku.com/articles/getting-started-with-python
 
 
