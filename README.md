@@ -19,27 +19,27 @@ Dallas Crime Analyis contains three parts:
 I used Jupyter Notebook to edit the data file and create the vizualizations. 
 
 Here is a list of the Python packages used:
-pandas
-numpy
-re
-folium
-IPython.display
-FileLink, FileLinks
-seaborn
-matplotlib
-matplotlib.colors
-matplotlib.pyplot 
-holoviews
-hvplot.pandas
-hv.extension ('bokeh' , 'matplotlib') 
-sklearn.model_selection 
-train_test_split
-StandardScaler
-accuracy_score
-KMeans
-classification_report, confusion_matrix
-itertools
-XGBClassifier
+pandas,
+numpy,
+re,
+folium,
+IPython.display,
+FileLink, FileLinks,
+seaborn,
+matplotlib,
+matplotlib.colors,
+matplotlib.pyplot,
+holoviews,
+hvplot.pandas,
+hv.extension ('bokeh' , 'matplotlib'), 
+sklearn.model_selection ,
+train_test_split,
+StandardScaler,
+accuracy_score,
+KMeans,
+classification_report, confusion_matrix,
+itertools,
+XGBClassifier,
 Flask 
 
 Data Engineering Process:
@@ -51,7 +51,16 @@ https://www.dallasopendata.com/Public-Safety/Police-Incident-location-and-pertin
 
 You will need to export it as a CSV. 
 
-Files
+Files Used:
+The Templates folder contains the html templates for the some the visualizations and template for the website. 
+
+The Dallas Crime Analysis v5.ipynb file is the Jupyter file I used to run analysis and create visualizations. 
+
+The Procfile is a file that Heroku needs to run the app. Heroku apps include a Procfile that specifies the commands that are executed by the app on startup. You can use a Procfile to declare a variety of process types, including:
+
+The app.py is the file that configures the website/ app. This file is created to help the user include any application configuration for the app. Using this, you can configure some of the attributes of the application.
+
+The requirements.txt file is just a list of pip install arguments placed in a file. Note that you should not rely on the items in the file being installed by pip in any particular order.
 
 
 Instructions:
