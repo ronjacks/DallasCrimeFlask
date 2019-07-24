@@ -13,24 +13,24 @@
 	 
 	 
 	<h1>Summary of Process</h1>
-	<p> The data was downloaded from dallasopendata.com. I then explored the data. I then reduced the dataframe to only to columns we cared about. After the data was consolidated, I did some data engineering to the columns to create a column that summarized the type of crime that had occured, where the crime had occured, time etc. 
-		Extra columns were added to rank the crime that happened. This synthesized dataframe was used for the advanced analytics and machine learning which helped gain deeper insights. I finally visualized where the crime is happened on interactive  
-		A heat map and interactive maps was to used to bring the analysis to life. </p>
+	<p> The data was downloaded from dallasopendata.com. I then explored the data. I reduced the dataframe to only columns I cared about. After the data was consolidated, I did some data engineering to the columns to create a column that summarized the type of crime that had occured, where the crime had occured, time etc. 
+		Extra columns were added to rank the crime that happened. This synthesized dataframe was used for the advanced analytics and machine learning which helped gain deeper insights. I finally visualized where the crime is happened on   
+		a heat map and interactive maps that helped bring the analysis to life. </p>
 		
 		<h1>Dallas Crime Graphs<h1>
 			<h4>Hourly Trend  </h4>
-				<p> Let us see the hourly trend of crimes </p>
+				<p> Let us see the hourly trend of crimes below. </p>
 				<img src="{{ img_df_hourly }}" alt="img_df_hourly">
-				<p> This graph above shows that it is at 18:00 (6 PM CST) when the most crimes take place. Hours between 1am -7am have the least amount of criminal activity going on. This plot shows that from 3 am to 10 am is the safest time in Dallas, while </p>
+				<p> This graph above shows that at 20:00 (8 PM CST) is when the most crime take place. Hours between 05:00 (5 AM CST) has the least amount of criminal activity going on. This plot shows that from 3 am to 10 am is the safest time in Dallas, while 6 PM to 10 PM is the most dangerous. </p>
 			<h4>District Council </h4>
-				<p>Dallas has 14 council districts in the city, let us visualize top crimes count for each districts</p>
+				<p>Dallas has 14 council districts in the city, let us visualize top crimes count for each district. </p>
 				<img src="{{ img_df_council }}" alt="img_df_council">
-				<p> As per above graph Council D7 takes the lead for severe crime. Let us put the same data in a heatmap</p>
+				<p> Per the above graph Council D7 takes the lead for severe crime. Let us put the same data in a heatmap to find out the resolution of these crimes. </p>
 				<img src="{{ img_council_heatmap }}" alt="img_council_heatmap">
 			<h4> Police Divisions</h4>
 				<p>Here is the count of severe crimes broken out by 8 divisions of Dallas. </p>
 				<img src="{{ img_df_division }}" alt="img_df_division">
-				<p>The graph shows that the Southeast division is victim of most crimes while north central comparatively is safe in terms of severe crimes.</p>
+				<p>The graph shows that the Southeast division is victim of having the largest % of the crime while north central comparatively is safe in terms of severe crimes.</p>
 			<h4> Monthly Crime</h4>
 				<p>Below shows the amount of crime per month. July has the most crime.  </p>
 				<img src="{{ img_df_month }}" alt="img_df_month">
@@ -38,9 +38,9 @@
 			<h4> Locations </h4>
 				<p> It is important to understand which locations you have to be more vigilant in.</p>
 				<img src="{{ img_df_type_of_loc }}" alt="img_df_type_of_loc">
-				<p>This graph reveals that street, apartment complex and parking lot are the most dangerous place to be in.</p>
+				<p>This graph reveals that street, apartment complexes and parking lots are the most dangerous place to be in.</p>
 		<h1> Machine learning for Dallas Crime</h1>
-			<p> Machine learning is a method of predictive data analysis that implments mathematics / statistics algos with computer prgramming. We previously preformed a general analysis of the Dallas crimne data. We will now run more advanced analysis. 
+			<p> Machine learning is a method of predictive data analysis that implments mathematics / statistics and algos with computer prgramming. We previously preformed general analysis of the Dallas crimne data. We will now run more advanced analysis. 
 				30 percent of data is used for testing purpose while 70 percent is used for training of our Support Vector Machine model. The important columns considered in this model are 'Type_of_Incident_Bucket','rank','severity','Zip Code','Type_of_Location','Month of Occurence', & 'Hour'.</p>
 			<h4> SVM Model</h4>
 				<p> In machine learning, support-vector machines (SVMs, also support-vector networks) are supervised learning models with associated learning algorithms that analyze data used for classification and regression analysis.The SVM algorithm offers a choice of kernel functions for performing its processing. Basically, mapping data into a higher dimensional space is called kernelling. The mathematical function used for the transformation is known as the kernel function, and can be of different types, such as:
@@ -81,8 +81,8 @@
 				
 				
 		<h1> Final Thoughts </h1>
-			<p> To Wrap up: The most crimes happen at 12am, on the street, in the southeast part of Dallas, and in July. Something that could make this analysis more impactful would be adding more columns. Columns such as the police badge number were dropped from the final dataframe that was used for the analysis. 
-					This would be something that could hold police accountable while patroling the communities. It also it could give public an idea on what cops are actually dealing with, which can bring some clarity and understanding.</p>
+			<p> To wrap up: The most crimes happen at 8 pm, on the street, in the southeast part of Dallas, in July. Something that could make this analysis more impactful would be adding more columns. Columns such as the police badge number were dropped from the final dataframe that was used for the analysis. 
+					This would be something that could hold police accountable while patrolling the communities. It also it could give public an idea on what cops are actually dealing with, which can bring some clarity and understanding! Thank you for reading. </p>
 	
 	 
    </div>
